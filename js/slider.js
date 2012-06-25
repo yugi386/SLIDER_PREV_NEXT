@@ -9,7 +9,7 @@ slide = 1;				//	controla qual imagem vai aparacer no slide
 window.onload= function() {	initSlider(); }	// iniciando o slider
 
 // *****************************************************************************
-function browseSlider(limite){	//	mostra as imagens no slider
+function browseSlider(){	//	mostra as imagens no slider
 	var img, opc;
 
 	for (var ct=1;ct<6;ct++){
@@ -29,7 +29,7 @@ function browseSlider(limite){	//	mostra as imagens no slider
 // *****************************************************************************
 function alterImg(nPhoto){	//	altera a imagem - numero slide
 	slide = nPhoto;
-	browseSlider(1);
+	browseSlider();
 }
 // *****************************************************************************
 function initSlider() {		//	 inicia controlador do slider
@@ -55,6 +55,6 @@ function navSlider(tipo) {	//	navegador prev e Next
 			slide = 5;
 		}
 	}
-	browseSlider(1);
+	browseSlider();
 }
 // *****************************************************************************
